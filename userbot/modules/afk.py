@@ -268,3 +268,5 @@ CMD_HELP.update({
 \nUsage: Back from afk state\
 "
 })
+
+# ========================= test ============================
