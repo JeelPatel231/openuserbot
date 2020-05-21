@@ -64,3 +64,4 @@ pyfiglet
 jotquote
 csvfaker
 pymongo[srv]
+git+https://github.com/debian/apt
