@@ -64,4 +64,4 @@ pyfiglet
 jotquote
 csvfaker
 pymongo[srv]
-python3-libtorrent
+python-libtorrent
