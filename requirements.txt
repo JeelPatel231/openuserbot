@@ -64,4 +64,3 @@ pyfiglet
 jotquote
 csvfaker
 pymongo[srv]
-git+https://github.com/emmercm/docker-libtorrent
