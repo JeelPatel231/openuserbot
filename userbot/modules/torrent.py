@@ -16,7 +16,7 @@ params = {
     'paused': False,
     'auto_managed': True,
     'duplicate_is_error': True}
-link = "" # PASTE TORRENT/MAGNET LINK HERE
+link = "magnet:?xt=urn:btih:67295165684A63BCF75A7BD1016EEA056AB8BC16&dn=The+Boss+Baby+and+Tim%26%23039%3Bs+Treasure+Hunt+Through+Time+%282017%29+%5B720p%5D+%5BYTS%5D+%5BYIFY%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce" # PASTE TORRENT/MAGNET LINK HERE
 print(link)
 
 handle = lt.add_magnet_uri(ses, link, params)
