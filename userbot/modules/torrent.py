@@ -1,7 +1,13 @@
 import libtorrent as lt
 import time
-import datetime
+import shutil
+from datetime import datetime
+from telethon import events
+import os
+from userbot import CMD_HELP
 
+
+#start libtorrent download
 ses = lt.session()
 ses.listen_on(6881, 6891)
 params = {
@@ -41,7 +47,24 @@ print(handle.name(), "COMPLETE")
 print("Elapsed Time: ",int((end-begin)//60),"min :", int((end-begin)%60), "sec")
 
 print(datetime.datetime.now())
+#end lib torrent download
 
+
+#start zipping
+shutil.make_archive(handle.name(), 'zip', '/root/userbot/torrent/'+handle.name())
+#end zipping
+
+#send
+#bot.send_document(chat_id, file=open(/root/userbot/torrent/handle.name()+".zip"))
+#sent
+
+#deleting
+#if os.path.exists('/root/userbot/'+handle.name()+".zip"):
+#  os.remove('/root/userbot/'handle.name()+".zip")
+#  shutil.rmtree('/root/userbot/torrent/handle.name()')
+#else:
+#  print("The file does not exist")
+#
 
 CMD_HELP.update({"torrent": ".torrent\
 \nUsage: .torrent (paste magnet link here)"})
