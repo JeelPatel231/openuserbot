@@ -41,3 +41,7 @@ print(handle.name(), "COMPLETE")
 print("Elapsed Time: ",int((end-begin)//60),"min :", int((end-begin)%60), "sec")
 
 print(datetime.datetime.now())
+
+
+CMD_HELP.update({"torrent": ".torrent\
+\nUsage: .torrent (paste magnet link here)"})
